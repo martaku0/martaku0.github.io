@@ -77,7 +77,9 @@ a:hover {
     width:50vw;
     margin-left:2%;
     padding-left:2%;
-    border-bottom: 5px solid #ccccca;
+    border-bottom: 5px solid #FFD77F;
+    font-size: 40px;
+
 }
 
 button {
@@ -154,6 +156,10 @@ button:hover {
 
 }
 
+.pizzaImg {
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 #pizza1 {
     background-image: url("https://cdn.pixabay.com/photo/2017/12/05/20/10/pizza-3000285_960_720.png");
@@ -185,6 +191,7 @@ button:hover {
     text-align: center;
     width: 300px;
     height: 80%;
+    font-size: 16px;
 }
 
 
@@ -202,3 +209,6 @@ footer a {
     width:10%;
     display: inline-block;
 }
+
+
+
