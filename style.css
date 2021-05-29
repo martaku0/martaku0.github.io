@@ -52,6 +52,7 @@ a:hover {
     position:absolute;
     left:2%;
     top:15px;
+    width: 60px;
 }
 
 .slider {
