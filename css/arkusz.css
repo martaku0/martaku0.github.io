@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+table {
+    margin: 20px auto auto auto;
+}
+
+td {
+    border: none;
+    background-color: #BACBA9;
+    cursor: pointer;
+    font-weight: bold;
+    color: #BACBA9;
+    min-width: 40px;
+    height: 40px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #3F4739;
+    color: #E1F4CB;
+    font-size: 24px;
+}
+
+#startBttn {
+    background-color: #717568;
+    color: #E1F4CB;
+    border: none;
+    font-size: 32px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px;
+    align-self: center;
+}
+
+#startBttn:hover {
+    background-color: #E1F4CB;
+    color: #717568;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.no-mine-open {
+    background-color: #E1F4CB;
+    color: black;
+}
+
+.mine-open {
+    background-color: #F1BF98;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    padding: 10px;
+    align-self: center;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+input {
+    font-size: 16px;
+    width: 100px;
+    background-color: white;
+    padding: 2px;
+}
+
+label {
+    margin: 10px;
+}
+
+.nick>input {
+    width: 120px;
+    align-self: center;
+}
+
+.disable-label>input {
+    background-color: #717568;
+    color: white;
+}
+
+
+/* --- */
+
+.overlay-lost,
+.overlay-won {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    font-size: 36px;
+}
+
+.won button,
+.lost button {
+    width: 100px;
+    background-color: #E1F4CB;
+    color: #3F4739;
+    margin-top: 10px;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+.won button:hover,
+.lost button:hover {
+    background-color: #3F4739;
+    color: #E1F4CB;
+}
+
+.highscores-mode {
+    font-size: 20px;
+    padding: 10px;
+}

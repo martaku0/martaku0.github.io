@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/arkusz.css">
+
+    <script src='js/skrypt.js' defer></script>
+
+    <title>Minesweeper</title>
+</head>
+
+<body>
+
+    <main>
+        <label class="nick">Nick: <input id="nickLbl" name = "nick" type="text" value="guest" maxlength="10"></label>
+        <div class="main-header">
+            <label class="area-mines-to-get disable-label">Mines: <input name="mines-to-get" type="text" class="mines-to-get" value="10" maxlength="5" disabled></input></label>
+            <div class="settings">
+                <label class="area-width">Width: <input name = "width" type="number" value="9" maxlength="5"></label>
+                <label class="area-height">Height: <input name = "height" type="number" value="9" maxlength="5"></label>
+                <label class="area-mines">Mines: <input name = "mines" type="number" value="10" maxlength="5"></label>
+            </div>
+            <label class="area-time disable-label">Time [s]: <input name="time" type="text" class="time" value="0" maxlength="5" disabled></input></label>
+        </div>
+        <button id="startBttn" onclick="start()">Reset</button>
+        <table>
+        </table>
+    </main>
+
+    <div class="lost overlay-lost">
+        <h2>You lost!</h2>
+        <p class="all_time">Time: </p>
+        <br>
+        <h5>Highscores:</h5>
+        <div class="highscores"></div>
+        <br>
+        <button id="lostBttn" onclick="close_lost()">Close</button>
+    </div>
+
+    <div class="won overlay-won">
+        <h2>You won!</h2>
+        <p class="all_time">Time: </p>
+        <br>
+        <div class="new"></div>
+        <br>
+        <h5>Highscores:</h5>
+        <p class="highscores-mode">Mode:</p>
+        <div class="highscores"></div>
+        <br>
+        <button id="wonBttn" onclick="close_won()">Close</button>
+    </div>
+
+</body>
+
+</html>
