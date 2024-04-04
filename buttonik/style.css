@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+
+button {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+    transition-duration: 0.1s;
+}
