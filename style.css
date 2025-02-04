@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+p{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ASK CONTENT */
+#ask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ask > *{
+    margin: 10px;
+}
+
+button{
+    width: 170px;
+    font-size: 500%;
+    text-align: center;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button#yes{
+    background-color: greenyellow;
+}
+
+button#yes:hover{
+    background-color: rgb(108, 180, 0);
+}
+
+button#no{
+    background-color: red;
+}
+
+button#no:hover{
+    background-color: rgb(194, 0, 0);
+}
+
+/* THANK CONTENT */
+#thank{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
